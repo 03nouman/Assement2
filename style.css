@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  width: 100vw;
+  height: 150px;
+  background-color: rgb(237, 243, 123);
+  position: relative;
+  box-shadow: 8px 8px 6px rgb(227, 236, 186);
+}
+
+.img {
+  position: absolute;
+  bottom: 0;
+  float: left;
+}
+
+.btn {
+  float: right;
+  margin-top: 90px;
+  margin-right: 20px;
+}
+
+.btn button {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: rgb(95, 6, 248);
+  border: none;
+  font-size: 18px;
+  transition: background-color 2s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(47, 255, 123);
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 100px;
+
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  box-shadow: -8px -8px 6px rgb(244, 209, 145);
+  transition: all 2s linear;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  box-shadow: -8px -8px 6px rgb(244, 209, 145);
+  transition: all 2s linear;
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  box-shadow: -8px -8px 6px rgb(244, 209, 145);
+  transition: all 2s linear;
+}
+
+.box4 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  box-shadow: -8px -8px 6px rgb(244, 209, 145);
+  transition: width 2s linear;
+}
+
+.box1:hover {
+  background-color: rgb(230, 50, 50);
+  transform: scale(2);
+}
+
+.box2:hover {
+  background-color: rgb(230, 50, 50);
+  transform: scale(-1);
+}
+
+.box3:hover {
+  background-color: rgb(230, 50, 50);
+  border-radius: 50%;
+}
+
+
+.box4:hover {
+  background-color: red;
+  width: 300px;
+
+}
+
+
+@media only screen and (min-width:340px) and (max-width:701px) {
+  .btn {
+    display: none
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+}
